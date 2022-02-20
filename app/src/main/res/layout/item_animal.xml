@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ln_animal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:paddingVertical="20dp">
+
+    <ImageView
+        android:id="@+id/iv_animal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="@drawable/bg_white_radius"
+        android:elevation="6dp"
+        android:src="@drawable/ic_bear"
+        android:layout_marginHorizontal="10dp"
+        android:padding="10dp"
+        tools:ignore="ContentDescription" />
+</LinearLayout>

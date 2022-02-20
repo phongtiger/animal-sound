@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@drawable/farm2">
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-light"
+        android:layout_marginBottom="30dp"
+        android:gravity="center"
+        android:layout_marginTop="50dp"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="5"
+        android:text="Own"
+        android:textColor="@color/white"
+        android:textSize="34sp" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp">
+        <ImageView
+            android:id="@+id/iv_search"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="top|start"
+            android:elevation="6dp"
+            android:background="@drawable/ic_baseline_search_24"
+            android:layout_marginHorizontal="60dp"
+            android:backgroundTint="@color/yellow"
+            android:padding="10dp"
+            tools:ignore="ContentDescription" />
+        <ImageView
+            android:id="@+id/iv_animal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="@drawable/bg_white_radius"
+            android:elevation="6dp"
+            android:src="@drawable/ic_bear"
+            android:layout_marginHorizontal="50dp"
+            android:padding="10dp"
+            tools:ignore="ContentDescription" />
+        <ImageView
+            android:id="@+id/iv_play"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="top|end"
+            android:elevation="6dp"
+            android:src="@drawable/start"
+            android:layout_marginHorizontal="60dp"
+            android:padding="10dp"
+            tools:ignore="ContentDescription" />
+    </FrameLayout>
+    <TableRow android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <ImageView
+            android:id="@+id/iv_next"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:elevation="6dp"
+            android:src="@drawable/bt_previous"
+            android:layout_marginHorizontal="60dp"
+            android:padding="10dp"
+            tools:ignore="ContentDescription" />
+        <ImageView
+            android:id="@+id/iv_previous"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:elevation="6dp"
+            android:src="@drawable/bt_next"
+            android:layout_marginHorizontal="10dp"
+            android:padding="10dp"
+            tools:ignore="ContentDescription" />
+
+    </TableRow>
+</LinearLayout>
