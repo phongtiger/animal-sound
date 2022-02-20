@@ -75,6 +75,7 @@ public class M001MainFrg extends BaseFragment<FragmentM001MainBinding> {
 
     private void initData() {
         App.getInstance().getStorage().lstAnimal = new ArrayList<>();
+
         App.getInstance().getStorage().lstAnimal.add(new Animal(R.drawable.ic_bear, "Bear", R.raw.bear));
         App.getInstance().getStorage().lstAnimal.add(new Animal(R.drawable.ic_bee, "Bee", R.raw.bee));
         App.getInstance().getStorage().lstAnimal.add(new Animal(R.drawable.ic_bird, "Bird", R.raw.bird));
