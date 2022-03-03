@@ -11,6 +11,7 @@ import android.view.ViewGroup;
 import com.example.animalsound.App;
 import com.example.animalsound.R;
 import com.example.animalsound.databinding.FragmentM002DetailBinding;
+import com.example.animalsound.dialog.DetailInfoDialog;
 import com.example.animalsound.model.Animal;
 
 import java.io.UnsupportedEncodingException;
@@ -56,21 +57,15 @@ public class M002DetailFrg extends BaseFragment<FragmentM002DetailBinding> {
                 MediaPlayer.create(context, animal.getIdSound()).start();
                 break;
             case R.id.iv_search:
-                searchAnimal(getListAnimal().get(index).getName());
+                Animal animal2 = getListAnimal().get(index);
+                showInfoDialog(animal2);
         }
         updateUI(getListAnimal().get(index));
     }
 
-    private void searchAnimal(String name) {
-        try {
-            String word = URLEncoder.encode(name, "UTF-8");
-            Uri uri = Uri.parse("https://www.google.com/search?hl=en&q="+ word);
-            Intent intent = new Intent(Intent.ACTION_VIEW, uri);
-            startActivity(intent);
-        } catch (UnsupportedEncodingException e) {
-            e.printStackTrace();
-        }
-
+    private void showInfoDialog(Animal name) {
+        DetailInfoDialog detailInfoDialog = new DetailInfoDialog(context, name);
+        detailInfoDialog.show();
     }
 
     private void updateUI(Animal animal) {

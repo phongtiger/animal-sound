@@ -11,6 +11,7 @@
         <entry key="app/src/main/res/layout/fragment_m001_main.xml" value="0.25" />
         <entry key="app/src/main/res/layout/fragment_m002_detail.xml" value="0.165" />
         <entry key="app/src/main/res/layout/item_animal.xml" value="0.165" />
+        <entry key="app/src/main/res/layout/view_detail_info.xml" value="0.165" />
       </map>
     </option>
   </component>

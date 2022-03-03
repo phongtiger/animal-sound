@@ -10,5 +10,6 @@
     <color name="white_a">#66FFFFFF</color>
     <color name="blue">#6600ADEF</color>
     <color name="yellow">#FFEB3B</color>
+    <color name="colorStatusBarSplast">#8AD8FC</color>
 
 </resources>

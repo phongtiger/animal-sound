@@ -8,4 +8,7 @@
         <item name="colorOnSecondary">@color/black</item>
         <item name="android:statusBarColor" tools:targetApi="l">@color/blue</item>
     </style>
+
+    <style name="Theme.Dialog" parent="Theme.Animalsound">
+    </style>
 </resources>
